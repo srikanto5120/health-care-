@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "name":"Oparation Theater",
+        "img":"https://i.ibb.co/1ZswdDq/sergary.jpg",
+        "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+        
+    },
+    {
+        "id":2,
+        "name":" Pathology Lab",
+        "img":"https://i.ibb.co/mSvMrcS/pathology-lab.jpg",
+        "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+        
+    },
+    {
+        "id":3,
+        "name":"X- RAY",
+        "img":"https://i.ibb.co/4VLtJNX/xray.jpg",
+        "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+        
+    },
+    {
+        "id":4,
+        "name":"Clinic",
+        "img":"https://i.ibb.co/Ks30y4p/bed.jpg",
+        "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+        
+    },
+    {
+        "id":5,
+        "name":" Ambulance",
+        "img":"https://i.ibb.co/LnWZ37J/Ambulance.jpg",
+        "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+        
+    },
+    {
+        "id":6,
+        "name":" Medicine Shop",
+        "img":"https://i.ibb.co/2c2rT4M/medicale-shop.jpg",
+        "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+        
+    } 
+]

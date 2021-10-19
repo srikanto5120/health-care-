@@ -1,0 +1,48 @@
+[
+    {
+        "id":1,
+        "name":"AFZAL HOSSAIN",
+        "img":"https://www.populardiagnostic.com/public/team/648799224-20200617154015-377887731.png",
+        "discription":" Chairmen "
+        
+    },
+    {
+        "id":2,
+        "name":"MOSADDEQUE HOSSAIN ",
+        
+        "img":" https://www.populardiagnostic.com/public/team/1950245063-20200617154053-531629539.png",
+        "discription":" General Manager, Customer Services "
+        
+    },
+    {
+        "id":3,
+        "name":"MD. ALAUDDIN, FCMA",
+        "img":" https://www.populardiagnostic.com/public/team/1052784259-20210801164659-817883248.jpeg",
+        "discription":" DGM & Head of Finance & Accounts"
+        
+    },
+    {
+        "id":4,
+        "name":"ACHINTO KUMAR NAG",
+        "img":" https://www.populardiagnostic.com/public/team/1927586805-20200617154131-1553449953.png",
+        "discription":" AGM, (HR & Admin)"
+        
+    },
+    {
+        "id":5,
+        "name":" MOSTAFA NURMOHAMMAD (PALASH) ",
+        "img":"https://www.populardiagnostic.com/public/team/751673027-20210113210945-413476400.png",
+        "discription":"  AGM, (Engineering)"
+        
+    },
+    {
+        "id":6,
+        "name":" ABDUR RAZZAK ",
+        "img":" https://www.populardiagnostic.com/public/team/1339706970-20200617154208-1123480868.png",
+        "discription":"AGM, (Finance & Accounts)"
+
+        
+    }
+ 
+     
+]

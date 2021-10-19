@@ -1,0 +1,85 @@
+
+
+
+
+
+{
+     "serviceDetails":[
+         {
+             "service":{
+                  "id":1,
+                    "name":"Oparation Theater",
+                    "img":"https://i.ibb.co/1ZswdDq/sergary.jpg",
+                    "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+                        }
+         },
+         {
+             "service":{
+                  "id":2,
+                    "name":"Oparation Theater",
+                    "img":"https://i.ibb.co/1ZswdDq/sergary.jpg",
+                    "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+                        }
+         },
+         {
+             "service":{
+                  "id":3,
+                    "name":"Oparation Theater",
+                    "img":"https://i.ibb.co/1ZswdDq/sergary.jpg",
+                    "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+                        }
+         },
+         {
+             "service":{
+                  "id":4,
+                    "name":"Oparation Theater",
+                    "img":"https://i.ibb.co/1ZswdDq/sergary.jpg",
+                    "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+                        }
+         },
+         {
+             "service":{
+                  "id":5,
+                    "name":"Oparation Theater",
+                    "img":"https://i.ibb.co/1ZswdDq/sergary.jpg",
+                    "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+                        }
+         },
+         {
+             "service":{
+                  "id":6,
+                    "name":"Oparation Theater",
+                    "img":"https://i.ibb.co/1ZswdDq/sergary.jpg",
+                    "discription":"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam minima dolorum, quae doloremque, qui fugiat alias dicta facilis error dolorem id, rem culpa eius minus atque libero iste illo quos!"
+                        }
+         }
+     ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
