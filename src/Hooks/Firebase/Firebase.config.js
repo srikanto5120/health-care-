@@ -1,9 +1,9 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyCSoBG49Q7aC2QaWguC99ZauMbRe_pwO2A",
-  authDomain: "assignment-10-67128.firebaseapp.com",
-  projectId: "assignment-10-67128",
-  storageBucket: "assignment-10-67128.appspot.com",
-  messagingSenderId: "595896694756",
-  appId: "1:595896694756:web:3a0dfbc6b7093192fa39f1",
+  apiKey: "AIzaSyBqLy8InGPJcGdk-WIQP2H9O0x4z34lyKo",
+  authDomain: "medihealthcare-5c122.firebaseapp.com",
+  projectId: "medihealthcare-5c122",
+  storageBucket: "medihealthcare-5c122.appspot.com",
+  messagingSenderId: "926239549375",
+  appId: "1:926239549375:web:b451e090568c95d34c630a",
 };
 export default firebaseConfig;

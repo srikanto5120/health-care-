@@ -13,7 +13,7 @@ const Contact = () => {
           <div className=" pt-3">
             <div className="d-flex  align-items-center">
               <div>
-                <i class="fas contact-icon fa-home"></i>
+                <i className="fas contact-icon fa-home"></i>
               </div>
               <div>
                 <h6> Head Office :</h6>
@@ -23,7 +23,7 @@ const Contact = () => {
 
             <div className="d-flex align-items-center">
               <div>
-                <i class="fas contact-icon fa-envelope-open-text"></i>
+                <i className="fas contact-icon fa-envelope-open-text"></i>
               </div>
               <div>
                 <h6>Email Address:</h6>
@@ -33,7 +33,7 @@ const Contact = () => {
             </div>
             <div className="d-flex align-items-center">
               <div>
-                <i class="fas contact-icon fa-phone"></i>
+                <i className="fas contact-icon fa-phone"></i>
               </div>
               <div>
                 <h6>Contact Us:</h6>

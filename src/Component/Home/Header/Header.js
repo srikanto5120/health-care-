@@ -1,21 +1,30 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "../../../images/logo.jpg";
+import "./Header.css";
 
 import useAuth from "../../../Hooks/useAuth";
 
 const Header = () => {
-  const { user, logout } = useAuth();
-  console.log(user);
+  const { allContext } = useAuth();
+  const { user, logout } = allContext;
+
   return (
     <div>
-      <Navbar bg="dark" variant="dark" collapseOnSelect expand="lg">
+      <Navbar
+        bg="dark"
+        className="py-4"
+        variant="dark"
+        collapseOnSelect
+        expand="lg"
+      >
         <Container className="d-flex justify-content-between">
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Navbar.Brand href="#home">Eye Care</Navbar.Brand>
           <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-end menu">
+          <Navbar.Collapse className=" menu">
             <Nav className="mx-auto">
-              <Nav.Link as={Link} to="/home">
+              <Nav.Link className="link" as={Link} to="/home">
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to="/services">
@@ -33,6 +42,10 @@ const Header = () => {
               <Nav.Link as={Link} to="/contact">
                 Contact{" "}
               </Nav.Link>
+              <Nav.Link as={Link} to="/signup">
+                Signup{" "}
+              </Nav.Link>
+
               {user.email ? (
                 <button onClick={logout} className="btn btn-secondary">
                   Logout
@@ -45,9 +58,17 @@ const Header = () => {
               )}
             </Nav>
 
-            <Navbar.Text>
-              Signed in as: <a href="#login"> {user.displayName}</a>
-            </Navbar.Text>
+            {user.email ? (
+              <Link to="/home" className="d-flex align-items-center name   ">
+                <p className="ml-2 ">{user.displayName}</p>
+                <img className="user-img" src={user?.photoURL} alt="" />
+              </Link>
+            ) : (
+              <Link to="/home">
+                {" "}
+                <i className="fas icon fa-user"></i>
+              </Link>
+            )}
           </Navbar.Collapse>
         </Container>
       </Navbar>

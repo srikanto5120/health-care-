@@ -28,7 +28,7 @@ const Apoinment = () => {
               name="Select Date"
               id=""
             />
-            <h2>fkdsjfkdjf</h2>
+
             <br />
             <input
               type="number"

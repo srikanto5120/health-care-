@@ -64,7 +64,7 @@ const Doctors = () => {
         </Col>
       </Row>
 
-      <div class="input-group py-5  mx-auto  w-50 mb-3">
+      <div className="input-group py-5  mx-auto  w-50 mb-3">
         <input
           type="text"
           className="form-control py-3"

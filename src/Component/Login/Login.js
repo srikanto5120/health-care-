@@ -1,62 +1,34 @@
 import React from "react";
-import { useState } from "react";
+
 import "./Login.css";
 
 import useAuth from "../../Hooks/useAuth";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-import { Link } from "react-router-dom";
+
+import { Link, useHistory, useLocation } from "react-router-dom";
 
 const Login = () => {
-  const { signInUsingGoogle } = useAuth();
+  const { allContext } = useAuth();
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const history = useHistory();
 
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-  };
-  const handleRagistation = (e) => {
-    e.preventDefault();
+  const location = useLocation();
+  const redict = location?.state?.from;
 
-    const auth = getAuth();
-    if (password < 6) {
-      setError("Password must be  at least 6 chracter");
-      return;
-    }
-    // if (!/(?=*[0-9])/.test(password)) {
-    //   setError("Assert a string has at least one number;");
-    //   return;
-
-    // if (!/(?=.*[!@#$%^&*])/.test(password)) {
-    //   setError("Assert a string has at least one special character");
-    //   return;
-    // }
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((result) => {
-        // Signed in
-        const user = result.user;
-        setError("");
-        console.log(user);
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        console.log(errorCode);
-        const errorMessage = error.message;
-        console.log(errorMessage);
-        // ..
-      });
-  };
+  const {
+    signInUsingGoogle,
+    getEmail,
+    getPassword,
+    error,
+    setError,
+    setUser,
+    signinWithEmail,
+  } = allContext;
   return (
     <div className=" login   my-5">
       <h4 className="  m-2">Please Login</h4>
-      <form onSubmit={handleRagistation} className="mt-5  ">
+      <form className="mt-5  ">
         <input
-          onBlur={handleEmail}
+          onBlur={getEmail}
           type="email"
           placeholder="Enter Your Email"
           className="form-control"
@@ -67,7 +39,7 @@ const Login = () => {
 
         <input
           placeholder="Enter Your password"
-          onBlur={handlePassword}
+          onBlur={getPassword}
           type="password"
           required
           className="form-control"
@@ -75,19 +47,34 @@ const Login = () => {
         />
 
         <div className="btn-align">
-          <button type="submit" className="btn btn-primary  w-75 ">
-            Sign in
+          <small className="text-danger">{error}</small>
+          <button
+            onClick={signinWithEmail}
+            type="submit"
+            className="btn btn-primary  w-75 "
+          >
+            Log in
           </button>
           <br />
           <br />
-          <Link to="/register">
+          <Link to="/signup">
             <button type="submit" className="btn btn-primary  w-75 ">
               Create your account
             </button>
           </Link>
           .............or...............
           <button
-            onClick={signInUsingGoogle}
+            onClick={() => {
+              signInUsingGoogle()
+                .then((result) => {
+                  const user = result.user;
+                  setUser(user);
+                  history.push(redict);
+                })
+                .catch((error) => {
+                  setError(error.message);
+                });
+            }}
             type="submit"
             className="btn btn-primary  w-75 "
           >

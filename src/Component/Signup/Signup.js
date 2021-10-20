@@ -2,30 +2,32 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 
-const Register = () => {
-  const { signInUsingGoogle } = useAuth();
+const Signup = () => {
+  const { allContext } = useAuth();
+  const {
+    getEmail,
+    getName,
+    getPassword,
+
+    error,
+    signInUsingGoogle,
+    signinWithEmail,
+  } = allContext;
   return (
     <div className=" login   my-5">
-      <h5 className="  m-2"> Create Account</h5>
+      <h4 className="  m-2">Please Login</h4>
       <form className="mt-5  ">
         <input
-          type="email"
-          placeholder="Enter Your First Name"
+          onBlur={getName}
+          type="text"
+          placeholder="Enter Your Name"
           className="form-control"
-          id="inputEmail3"
-          required
-        />
-        <br />
-
-        <input
-          type="email"
-          placeholder="Enter Your  Last Name"
-          className="form-control"
-          id="inputEmail3"
+          id="inputName"
           required
         />
         <br />
         <input
+          onBlur={getEmail}
           type="email"
           placeholder="Enter Your Email"
           className="form-control"
@@ -36,21 +38,36 @@ const Register = () => {
 
         <input
           placeholder="Enter Your password"
+          onBlur={getPassword}
           type="password"
           required
           className="form-control"
           id="inputPassword3"
         />
-
+        <br />
+        {/* <input
+          placeholder="Enter Your photurl"
+          onBlur={getPhotoURL}
+          type="text"
+          required
+          className="form-control"
+          id="inputPhotourl"
+        />
+        <br /> */}
         <div className="btn-align">
-          <button type="submit" className="btn btn-primary  w-75 ">
-            Sign in
+          <small className="text-danger">{error}</small>
+          <button
+            onClick={signinWithEmail}
+            type="submit"
+            className="btn btn-primary  w-75 "
+          >
+            Signup
           </button>
           <br />
           <br />
           <Link to="/login">
             <button type="submit" className="btn btn-primary  w-75 ">
-              Create your account
+              Log in
             </button>
           </Link>
           .............or...............
@@ -69,4 +86,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Signup;
