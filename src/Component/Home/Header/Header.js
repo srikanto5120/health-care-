@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../../../images/logo.jpg";
+
 import "./Header.css";
 
 import useAuth from "../../../Hooks/useAuth";
@@ -20,7 +20,7 @@ const Header = () => {
         expand="lg"
       >
         <Container className="d-flex justify-content-between">
-          <Navbar.Brand href="#home">Eye Care</Navbar.Brand>
+          <Navbar.Brand href="#home">Health Care</Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className=" menu">
             <Nav className="mx-auto">
