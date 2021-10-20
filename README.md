@@ -1,16 +1,14 @@
 **Website Name : Health Care**
 
-- Live [link] :
+**Live link** : \* https://medihealthcare-5c122.web.app
 
-* https://medihealthcare-5c122.web.app
+**Website build** :
 
-  Website build :
+- JavScript
+- Bootstrap
+- React
 
-* JavScript
-* Bootstrap
-* React
-
-This a Website for You
+**This a Website for You**
 
 - Looking for expart and best doctor
 - Cheep rate of test
